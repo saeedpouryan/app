@@ -12,6 +12,7 @@ class Calculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: 'ماشین حساب',
       debugShowCheckedModeBanner: false,
       home: HomeView(),
     );
