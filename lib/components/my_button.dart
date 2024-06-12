@@ -16,11 +16,11 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
-      child: ElevatedButton(
+      child: TextButton(
         style: TextButton.styleFrom(
           backgroundColor: color,
           minimumSize: const Size(75.0, 75.0),
-          shape: const CircleBorder(),
+          // shape: const CircleBorder(),
           padding: const EdgeInsets.all(15),
         ),
         onPressed: onTap,

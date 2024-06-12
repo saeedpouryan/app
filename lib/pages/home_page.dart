@@ -4,16 +4,16 @@ import '../components/my_second_buton.dart';
 import '../constants.dart';
 import 'package:calculator/components/my_button.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<HomePage> createState() => _HomePageState();
 }
 
 CalculatorBrain calculatorBrain = CalculatorBrain();
 
-class _HomeViewState extends State<HomeView> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
