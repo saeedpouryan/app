@@ -1,5 +1,6 @@
 import 'package:calculator/calculator_brain.dart';
 import 'package:flutter/material.dart';
+import 'package:persian_number_utility/persian_number_utility.dart';
 import '../components/my_second_buton.dart';
 import '../constants.dart';
 import 'package:calculator/components/my_button.dart';
@@ -14,6 +15,8 @@ class HomePage extends StatefulWidget {
 CalculatorBrain calculatorBrain = CalculatorBrain();
 
 class _HomePageState extends State<HomePage> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,15 +24,17 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
+
           // Calculater Output
           Container(
             alignment: Alignment.bottomRight,
             padding: const EdgeInsets.fromLTRB(0.0, 0.0, 30.0, 15.0),
             child: Text(
-              calculatorBrain.getResult(),
-              style: kOutputTextStyle,
+              calculatorBrain.getResult().seRagham(),
+              style: kOutputTextStyle.copyWith(fontWeight: FontWeight.w200),
             ),
           ),
+
           //
           // Buttons Create First Row
           // 1
@@ -255,6 +260,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+
+          const SizedBox(height: 20)
         ],
       ),
     );

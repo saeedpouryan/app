@@ -16,7 +16,7 @@ class MySecondButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
-      child: ElevatedButton(
+      child: TextButton(
         style: TextButton.styleFrom(
           alignment: Alignment.centerLeft,
           backgroundColor: color,

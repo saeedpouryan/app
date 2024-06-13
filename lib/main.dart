@@ -1,6 +1,6 @@
+import 'package:calculator/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
-import 'views/home_view.dart';
 
 void main() {
   runApp(const Calculator());
@@ -14,7 +14,7 @@ class Calculator extends StatelessWidget {
     return const MaterialApp(
       title: 'ماشین حساب',
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: HomePage(),
     );
   }
 }
